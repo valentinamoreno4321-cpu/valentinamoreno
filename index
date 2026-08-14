@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Valentina Moreno Oviedo</title>
+
+<meta name="description" content="Valentina Moreno Oviedo - Servicios profesionales y estrategias digitales para negocios y emprendedores.">
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #252525;
+    background: #ffffff;
+    line-height: 1.6;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 7%;
+    border-bottom: 1px solid #eeeeee;
+    background: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 21px;
+    font-weight: 600;
+    color: #263c73;
+    text-decoration: none;
+}
+
+nav a {
+    margin-left: 28px;
+    text-decoration: none;
+    color: #555555;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #263c73;
+}
+
+/* HERO */
+
+.hero {
+    background: linear-gradient(135deg, #f5f7fc, #ffffff);
+    padding: 90px 7%;
+}
+
+.hero-container {
+    max-width: 1150px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 70px;
+}
+
+.hero-text {
+    max-width: 650px;
+}
+
+.hero-label {
+    color: #263c73;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 1.15;
+    margin: 15px 0 25px;
+    color: #202020;
+}
+
+.hero p {
+    color: #606060;
+    font-size: 17px;
+    max-width: 600px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 28px;
+
+    background: #263c73;
+    color: white;
+
+    text-decoration: none;
+    border-radius: 6px;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background: #1d2e59;
+}
+
+/* FOTO */
+
+.hero-image {
+    width: 360px;
+    height: 420px;
+
+    object-fit: cover;
+
+    border-radius: 14px;
+
+    box-shadow: 0 15px 40px rgba(0,0,0,0.10);
+}
+
+/* GENERAL SECTION */
+
+.section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 80px 7%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-title h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #202020;
+}
+
+.section-title p {
+    color: #707070;
+}
+
+/* ABOUT */
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.about h2 {
+    font-size: 32px;
+    color: #263c73;
+}
+
+.about p {
+    color: #555555;
+}
+
+/* SERVICES */
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.card {
+    padding: 30px;
+    border: 1px solid #e8e8e8;
+    border-radius: 12px;
+    background: #ffffff;
+
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
+
+.card h3 {
+    color: #263c73;
+    margin-top: 0;
+}
+
+.card p {
+    color: #666666;
+    font-size: 15px;
+}
+
+/* PROCESS */
+
+.process {
+    background: #f7f8fb;
+}
+
+.process-container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.step {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #e7e7e7;
+}
+
+.step-number {
+    font-size: 14px;
+    font-weight: bold;
+    color: #263c73;
+}
+
+.step h3 {
+    margin-bottom: 10px;
+}
+
+/* BUSINESS INFO */
+
+.business-info {
+    background: #263c73;
+    color: white;
+}
+
+.business-box {
+    max-width: 900px;
+    margin: auto;
+}
+
+.business-box h2 {
+    margin-top: 0;
+    font-size: 30px;
+}
+
+.business-data {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.data-item {
+    padding: 20px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 8px;
+}
+
+.data-item strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* CONTACT */
+
+.contact {
+    text-align: center;
+}
+
+.contact p {
+    color: #555555;
+}
+
+.contact a {
+    color: #263c73;
+    text-decoration: none;
+}
+
+/* FOOTER */
+
+footer {
+    background: #f5f5f5;
+    padding: 35px 7%;
+    text-align: center;
+    color: #777777;
+    font-size: 13px;
+}
+
+.footer-links {
+    margin-bottom: 15px;
+}
+
+.footer-links a {
+    margin: 0 10px;
+    color: #555555;
+    text-decoration: none;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+
+    header {
+        padding: 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0 8px;
+    }
+
+    .hero {
+        padding: 60px 25px;
+    }
+
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero-image {
+        width: 280px;
+        height: 330px;
+    }
+
+    .section {
+        padding: 60px 25px;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+    }
+
+    .services {
+        grid-template-columns: 1fr;
+    }
+
+    .steps {
+        grid-template-columns: 1fr;
+    }
+
+    .business-data {
+        grid-template-columns: 1fr;
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<!-- HEADER -->
+
+<header>
+
+    <a href="#inicio" class="logo">
+        Valentina Moreno Oviedo
+    </a>
+
+    <nav>
+
+        <a href="#inicio">Inicio</a>
+
+        <a href="#sobre-mi">Sobre mí</a>
+
+        <a href="#servicios">Servicios</a>
+
+        <a href="#informacion">Información</a>
+
+        <a href="#contacto">Contacto</a>
+
+    </nav>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero" id="inicio">
+
+    <div class="hero-container">
+
+        <div class="hero-text">
+
+            <div class="hero-label">
+                Servicios profesionales
+            </div>
+
+            <h1>
+                Estrategias digitales para hacer crecer tu presencia online
+            </h1>
+
+            <p>
+                Soy Valentina Moreno Oviedo y trabajo en el desarrollo
+                de estrategias digitales orientadas a emprendedores,
+                negocios y proyectos que buscan fortalecer su presencia
+                en internet.
+            </p>
+
+            <p>
+                Mi enfoque combina organización, estrategia y
+                herramientas digitales para construir procesos claros
+                y sostenibles.
+            </p>
+
+            <a href="#contacto" class="btn">
+                Contactar
+            </a>
+
+        </div>
+
+
+        <!--
+        IMPORTANTE:
+        Coloca aquí una fotografía real de Valentina
+        con el nombre "foto.jpg" dentro del repositorio.
+        -->
+
+        <img
+            src="foto.jpg"
+            alt="Valentina Moreno Oviedo"
+            class="hero-image"
+        >
+
+    </div>
+
+</section>
+
+
+<!-- SOBRE MI -->
+
+<section class="section" id="sobre-mi">
+
+    <div class="about">
+
+        <div>
+
+            <div class="hero-label">
+                Sobre mí
+            </div>
+
+            <h2>
+                Valentina Moreno Oviedo
+            </h2>
+
+            <p>
+                Mi trabajo está enfocado en el entorno digital,
+                acompañando proyectos y emprendimientos en la
+                organización y desarrollo de su presencia online.
+            </p>
+
+            <p>
+                Busco construir estrategias prácticas, ordenadas
+                y adaptadas a las necesidades de cada proyecto,
+                teniendo en cuenta sus objetivos y características.
+            </p>
+
+            <p>
+                El trabajo se desarrolla de manera personalizada,
+                buscando establecer procesos claros y una
+                comunicación directa durante cada etapa.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>
+                Un enfoque práctico y profesional
+            </h3>
+
+            <p>
+                Cada proyecto requiere una estrategia diferente.
+                Por eso, antes de implementar acciones digitales,
+                se revisan las necesidades, objetivos y recursos
+                disponibles.
+            </p>
+
+            <p>
+                El propósito es desarrollar procesos digitales
+                organizados que puedan evolucionar de acuerdo
+                con las necesidades del negocio.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SERVICIOS -->
+
+<section class="section" id="servicios">
+
+    <div class="section-title">
+
+        <h2>
+            Servicios
+        </h2>
+
+        <p>
+            Soluciones digitales adaptadas a cada proyecto.
+        </p>
+
+    </div>
+
+
+    <div class="services">
+
+
+        <div class="card">
+
+            <h3>
+                Estrategia Digital
+            </h3>
+
+            <p>
+                Planeación y organización de acciones digitales
+                orientadas a mejorar la presencia de un negocio
+                o proyecto en internet.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>
+                Publicidad Digital
+            </h3>
+
+            <p>
+                Organización y gestión de campañas publicitarias
+                en plataformas digitales de acuerdo con los
+                objetivos definidos para cada proyecto.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>
+                Optimización Digital
+            </h3>
+
+            <p>
+                Revisión y mejora de estructuras digitales,
+                contenidos y procesos relacionados con la
+                presencia online.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- PROCESO -->
+
+<section class="section process">
+
+    <div class="process-container">
+
+        <div class="section-title">
+
+            <h2>
+                Forma de trabajo
+            </h2>
+
+            <p>
+                Un proceso organizado para cada proyecto.
+            </p>
+
+        </div>
+
+
+        <div class="steps">
+
+
+            <div class="step">
+
+                <div class="step-number">
+                    01
+                </div>
+
+                <h3>
+                    Conocer el proyecto
+                </h3>
+
+                <p>
+                    Se revisan las necesidades, objetivos
+                    y características del negocio.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="step-number">
+                    02
+                </div>
+
+                <h3>
+                    Definir la estrategia
+                </h3>
+
+                <p>
+                    Se establecen las acciones digitales
+                    que mejor se ajustan al proyecto.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="step-number">
+                    03
+                </div>
+
+                <h3>
+                    Implementar y optimizar
+                </h3>
+
+                <p>
+                    Se implementan las acciones acordadas
+                    y se realizan ajustes según el comportamiento
+                    de las campañas y procesos.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- INFORMACIÓN LEGAL / NEGOCIO -->
+
+<section class="section business-info" id="informacion">
+
+    <div class="business-box">
+
+        <h2>
+            Información del negocio
+        </h2>
+
+        <p>
+            Información de identificación y contacto
+            correspondiente a la persona responsable del servicio.
+        </p>
+
+
+        <div class="business-data">
+
+
+            <div class="data-item">
+
+                <strong>
+                    Nombre
+                </strong>
+
+                Valentina Moreno Oviedo
+
+            </div>
+
+
+            <div class="data-item">
+
+                <strong>
+                    Identificación tributaria
+                </strong>
+
+                NIT 1.102.351.527-6
+
+            </div>
+
+
+            <div class="data-item">
+
+                <strong>
+                    Dirección
+                </strong>
+
+                CL 6 3 42 BRR LA CANTERA<br>
+                Piedecuesta, Santander<br>
+                Colombia
+
+            </div>
+
+
+            <div class="data-item">
+
+                <strong>
+                    Tipo de contribuyente
+                </strong>
+
+                Persona natural
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACTO -->
+
+<section class="section contact" id="contacto">
+
+    <div class="section-title">
+
+        <h2>
+            Contacto
+        </h2>
+
+        <p>
+            Si deseas conocer más sobre los servicios,
+            puedes comunicarte directamente.
+        </p>
+
+    </div>
+
+
+    <p>
+        📧
+        <a href="mailto:valentinamoreno.4321@gmail.com">
+            valentinamoreno.4321@gmail.com
+        </a>
+    </p>
+
+
+    <p>
+        📱
+        <a href="tel:+573188762181">
+            +57 318 876 2181
+        </a>
+    </p>
+
+
+    <p>
+        📍 Piedecuesta, Santander, Colombia
+    </p>
+
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="footer-links">
+
+        <a href="#inicio">
+            Inicio
+        </a>
+
+        <a href="#sobre-mi">
+            Sobre mí
+        </a>
+
+        <a href="#servicios">
+            Servicios
+        </a>
+
+        <a href="#informacion">
+            Información
+        </a>
+
+        <a href="#contacto">
+            Contacto
+        </a>
+
+    </div>
+
+
+    <div>
+        © 2026 Valentina Moreno Oviedo.
+        Todos los derechos reservados.
+    </div>
+
+
+    <div style="margin-top: 8px;">
+        Piedecuesta, Santander, Colombia
+    </div>
+
+</footer>
+
+
+</body>
+
+</html>
