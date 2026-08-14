@@ -1,91 +1,89 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Valentina Moreno Oviedo</title>
+<title>Valentina Moreno Oviedo | Servicios Digitales</title>
 
-<meta name="description" content="Valentina Moreno Oviedo - Servicios profesionales y estrategias digitales para negocios y emprendedores.">
+<meta name="description" content="Valentina Moreno Oviedo - Servicios de asesoría, estrategias digitales y optimización de presencia en redes sociales.">
+
+<!-- Verificación de dominio de Meta -->
+<meta name="facebook-domain-verification" content="AQUI_DEBES_PONER_TU_CODIGO_DE_META" />
 
 <style>
 
 * {
     box-sizing: border-box;
-}
-
-html {
     scroll-behavior: smooth;
 }
 
 body {
     margin: 0;
-    font-family: "Segoe UI", Arial, sans-serif;
-    color: #252525;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #292929;
     background: #ffffff;
     line-height: 1.6;
 }
 
-/* HEADER */
+/* =========================
+   HEADER
+========================= */
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 22px 7%;
-    border-bottom: 1px solid #eeeeee;
+    padding: 20px 7%;
     background: #ffffff;
+    border-bottom: 1px solid #eeeeee;
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
-.logo {
-    font-size: 21px;
+header h2 {
+    margin: 0;
+    color: #b76e79;
+    font-size: 22px;
     font-weight: 600;
-    color: #263c73;
-    text-decoration: none;
 }
 
 nav a {
-    margin-left: 28px;
+    margin-left: 25px;
     text-decoration: none;
-    color: #555555;
+    color: #555;
     font-size: 14px;
+    transition: 0.3s;
 }
 
 nav a:hover {
-    color: #263c73;
+    color: #b76e79;
 }
 
-/* HERO */
+/* =========================
+   HERO
+========================= */
 
 .hero {
-    background: linear-gradient(135deg, #f5f7fc, #ffffff);
-    padding: 90px 7%;
-}
-
-.hero-container {
-    max-width: 1150px;
-    margin: auto;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    gap: 70px;
+    gap: 60px;
+    padding: 90px 7%;
+    background: linear-gradient(135deg, #fff8f9, #ffffff);
 }
 
 .hero-text {
-    max-width: 650px;
+    max-width: 600px;
 }
 
 .hero-label {
-    color: #263c73;
-    font-size: 13px;
+    color: #b76e79;
+    font-size: 14px;
     font-weight: 600;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
     text-transform: uppercase;
 }
 
@@ -93,53 +91,55 @@ nav a:hover {
     font-size: 48px;
     line-height: 1.15;
     margin: 15px 0 25px;
-    color: #202020;
+    color: #242424;
 }
 
 .hero p {
-    color: #606060;
+    color: #5b5b5b;
     font-size: 17px;
-    max-width: 600px;
+    margin-bottom: 15px;
 }
+
+.hero-image {
+    width: 380px;
+    max-width: 100%;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 18px;
+    display: block;
+}
+
+/* =========================
+   BUTTON
+========================= */
 
 .btn {
     display: inline-block;
-    margin-top: 25px;
+    margin-top: 20px;
     padding: 14px 28px;
-
-    background: #263c73;
+    background: #b76e79;
     color: white;
-
     text-decoration: none;
-    border-radius: 6px;
-
+    border-radius: 7px;
     font-size: 14px;
-    font-weight: 600;
+    transition: 0.3s;
 }
 
 .btn:hover {
-    background: #1d2e59;
+    background: #985763;
+    transform: translateY(-1px);
 }
 
-/* FOTO */
-
-.hero-image {
-    width: 360px;
-    height: 420px;
-
-    object-fit: cover;
-
-    border-radius: 14px;
-
-    box-shadow: 0 15px 40px rgba(0,0,0,0.10);
-}
-
-/* GENERAL SECTION */
+/* =========================
+   GENERAL SECTIONS
+========================= */
 
 .section {
-    max-width: 1100px;
-    margin: auto;
     padding: 80px 7%;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .section-title {
@@ -148,16 +148,52 @@ nav a:hover {
 }
 
 .section-title h2 {
-    font-size: 30px;
+    font-size: 32px;
     margin-bottom: 10px;
-    color: #202020;
 }
 
 .section-title p {
-    color: #707070;
+    color: #777;
+    max-width: 650px;
+    margin: auto;
 }
 
-/* ABOUT */
+/* =========================
+   SERVICES
+========================= */
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    border: 1px solid #eeeeee;
+    padding: 30px;
+    border-radius: 12px;
+    background: #ffffff;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #b76e79;
+}
+
+.card p {
+    color: #666;
+    font-size: 15px;
+}
+
+/* =========================
+   ABOUT
+========================= */
 
 .about {
     display: grid;
@@ -166,158 +202,162 @@ nav a:hover {
     align-items: center;
 }
 
-.about h2 {
+.about-image img {
+    width: 100%;
+    max-width: 430px;
+    border-radius: 16px;
+}
+
+.about-text h2 {
     font-size: 32px;
-    color: #263c73;
+    margin-top: 5px;
 }
 
-.about p {
-    color: #555555;
+.about-text p {
+    color: #5d5d5d;
 }
 
-/* SERVICES */
+/* =========================
+   BUSINESS INFORMATION
+========================= */
 
-.services {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 22px;
+.info-box {
+    background: #faf7f8;
+    border: 1px solid #f0e2e5;
+    border-radius: 14px;
+    padding: 35px;
 }
 
-.card {
-    padding: 30px;
-    border: 1px solid #e8e8e8;
-    border-radius: 12px;
-    background: #ffffff;
-
-    transition: transform 0.2s ease;
-}
-
-.card:hover {
-    transform: translateY(-4px);
-}
-
-.card h3 {
-    color: #263c73;
+.info-box h2 {
     margin-top: 0;
+    color: #b76e79;
 }
 
-.card p {
-    color: #666666;
-    font-size: 15px;
+.info-row {
+    margin-bottom: 18px;
 }
 
-/* PROCESS */
-
-.process {
-    background: #f7f8fb;
+.info-row strong {
+    display: block;
+    color: #333;
+    margin-bottom: 4px;
 }
 
-.process-container {
+/* =========================
+   LEGAL SECTION
+========================= */
+
+.legal {
+    background: #fafafa;
+    border-top: 1px solid #eeeeee;
+}
+
+.legal-container {
     max-width: 1100px;
     margin: auto;
 }
 
-.steps {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-}
-
-.step {
-    background: white;
-    padding: 30px;
+.legal-block {
+    background: #ffffff;
+    border: 1px solid #eeeeee;
     border-radius: 10px;
-    border: 1px solid #e7e7e7;
+    padding: 28px;
+    margin-bottom: 20px;
 }
 
-.step-number {
-    font-size: 14px;
-    font-weight: bold;
-    color: #263c73;
-}
-
-.step h3 {
-    margin-bottom: 10px;
-}
-
-/* BUSINESS INFO */
-
-.business-info {
-    background: #263c73;
-    color: white;
-}
-
-.business-box {
-    max-width: 900px;
-    margin: auto;
-}
-
-.business-box h2 {
+.legal-block h3 {
+    color: #b76e79;
     margin-top: 0;
-    font-size: 30px;
 }
 
-.business-data {
-    margin-top: 30px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+.legal-block p,
+.legal-block li {
+    color: #606060;
+    font-size: 14px;
 }
 
-.data-item {
-    padding: 20px;
-    background: rgba(255,255,255,0.08);
-    border-radius: 8px;
+.legal-block ul {
+    padding-left: 22px;
 }
 
-.data-item strong {
-    display: block;
-    margin-bottom: 5px;
-}
-
-/* CONTACT */
+/* =========================
+   CONTACT
+========================= */
 
 .contact {
     text-align: center;
+    background: #fff8f9;
+    max-width: none;
+}
+
+.contact-content {
+    max-width: 700px;
+    margin: auto;
 }
 
 .contact p {
-    color: #555555;
+    color: #666;
 }
 
-.contact a {
-    color: #263c73;
-    text-decoration: none;
+.contact-data {
+    margin-top: 30px;
 }
 
-/* FOOTER */
+.contact-data p {
+    margin: 8px 0;
+}
+
+/* =========================
+   FOOTER
+========================= */
 
 footer {
-    background: #f5f5f5;
+    background: #242424;
+    color: #ffffff;
     padding: 35px 7%;
-    text-align: center;
-    color: #777777;
-    font-size: 13px;
 }
 
-.footer-links {
+.footer-content {
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+}
+
+.footer-name {
+    font-size: 18px;
     margin-bottom: 15px;
 }
 
-.footer-links a {
-    margin: 0 10px;
-    color: #555555;
-    text-decoration: none;
+.footer-links {
+    margin-bottom: 20px;
 }
 
-/* RESPONSIVE */
+.footer-links a {
+    color: #dddddd;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 13px;
+}
 
-@media (max-width: 800px) {
+.footer-links a:hover {
+    color: #ffffff;
+}
+
+.footer-small {
+    color: #aaaaaa;
+    font-size: 12px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 850px) {
 
     header {
-        padding: 20px;
         flex-direction: column;
         gap: 15px;
+        padding: 18px 5%;
     }
 
     nav a {
@@ -325,136 +365,121 @@ footer {
     }
 
     .hero {
-        padding: 60px 25px;
-    }
-
-    .hero-container {
         flex-direction: column;
         text-align: center;
+        padding: 65px 5%;
     }
 
     .hero h1 {
-        font-size: 36px;
+        font-size: 38px;
     }
 
     .hero-image {
-        width: 280px;
-        height: 330px;
-    }
-
-    .section {
-        padding: 60px 25px;
-    }
-
-    .about {
-        grid-template-columns: 1fr;
+        width: 320px;
     }
 
     .services {
         grid-template-columns: 1fr;
     }
 
-    .steps {
+    .about {
         grid-template-columns: 1fr;
+        text-align: center;
     }
 
-    .business-data {
-        grid-template-columns: 1fr;
+    .about-image img {
+        max-width: 320px;
+    }
+
+    .section {
+        padding: 60px 5%;
     }
 }
 
 </style>
-
 </head>
+
 
 <body>
 
-
-<!-- HEADER -->
+<!-- =========================
+     HEADER
+========================= -->
 
 <header>
 
-    <a href="#inicio" class="logo">
-        Valentina Moreno Oviedo
-    </a>
+    <h2>Valentina Moreno Oviedo</h2>
 
     <nav>
-
         <a href="#inicio">Inicio</a>
-
         <a href="#sobre-mi">Sobre mí</a>
-
         <a href="#servicios">Servicios</a>
-
         <a href="#informacion">Información</a>
-
         <a href="#contacto">Contacto</a>
-
     </nav>
 
 </header>
 
 
-<!-- HERO -->
+<!-- =========================
+     HERO
+========================= -->
 
 <section class="hero" id="inicio">
 
-    <div class="hero-container">
+    <div class="hero-text">
 
-        <div class="hero-text">
-
-            <div class="hero-label">
-                Servicios profesionales
-            </div>
-
-            <h1>
-                Estrategias digitales para hacer crecer tu presencia online
-            </h1>
-
-            <p>
-                Soy Valentina Moreno Oviedo y trabajo en el desarrollo
-                de estrategias digitales orientadas a emprendedores,
-                negocios y proyectos que buscan fortalecer su presencia
-                en internet.
-            </p>
-
-            <p>
-                Mi enfoque combina organización, estrategia y
-                herramientas digitales para construir procesos claros
-                y sostenibles.
-            </p>
-
-            <a href="#contacto" class="btn">
-                Contactar
-            </a>
-
+        <div class="hero-label">
+            Servicios digitales
         </div>
 
+        <h1>
+            Estrategias digitales para construir una presencia sólida en internet
+        </h1>
 
-        <!--
-        IMPORTANTE:
-        Coloca aquí una fotografía real de Valentina
-        con el nombre "foto.jpg" dentro del repositorio.
-        -->
+        <p>
+            Soy Valentina Moreno Oviedo y trabajo en el desarrollo y
+            optimización de estrategias digitales orientadas a emprendedores
+            y negocios que buscan fortalecer su presencia en medios digitales.
+        </p>
 
-        <img
-            src="foto.jpg"
-            alt="Valentina Moreno Oviedo"
-            class="hero-image"
-        >
+        <p>
+            Mi enfoque combina organización, estrategia y acompañamiento
+            para desarrollar procesos digitales de manera estructurada.
+        </p>
+
+        <a href="#contacto" class="btn">
+            Contactar
+        </a>
+
+    </div>
+
+
+    <div class="hero-image">
+
+        <img src="foto.jpg" alt="Valentina Moreno Oviedo">
 
     </div>
 
 </section>
 
 
-<!-- SOBRE MI -->
+<!-- =========================
+     SOBRE MÍ
+========================= -->
 
 <section class="section" id="sobre-mi">
 
     <div class="about">
 
-        <div>
+        <div class="about-image">
+
+            <img src="foto.jpg" alt="Valentina Moreno Oviedo">
+
+        </div>
+
+
+        <div class="about-text">
 
             <div class="hero-label">
                 Sobre mí
@@ -465,43 +490,20 @@ footer {
             </h2>
 
             <p>
-                Mi trabajo está enfocado en el entorno digital,
-                acompañando proyectos y emprendimientos en la
-                organización y desarrollo de su presencia online.
+                Soy una profesional enfocada en el entorno digital,
+                especialmente en estrategias de presencia, comunicación
+                y desarrollo de negocios a través de canales digitales.
             </p>
 
             <p>
-                Busco construir estrategias prácticas, ordenadas
-                y adaptadas a las necesidades de cada proyecto,
-                teniendo en cuenta sus objetivos y características.
+                Mi objetivo es brindar acompañamiento práctico y organizado,
+                adaptando cada estrategia a las características y necesidades
+                de cada proyecto.
             </p>
 
             <p>
-                El trabajo se desarrolla de manera personalizada,
-                buscando establecer procesos claros y una
-                comunicación directa durante cada etapa.
-            </p>
-
-        </div>
-
-
-        <div>
-
-            <h3>
-                Un enfoque práctico y profesional
-            </h3>
-
-            <p>
-                Cada proyecto requiere una estrategia diferente.
-                Por eso, antes de implementar acciones digitales,
-                se revisan las necesidades, objetivos y recursos
-                disponibles.
-            </p>
-
-            <p>
-                El propósito es desarrollar procesos digitales
-                organizados que puedan evolucionar de acuerdo
-                con las necesidades del negocio.
+                Trabajo de manera independiente y desarrollo mis actividades
+                desde Bucaramanga, Santander, Colombia.
             </p>
 
         </div>
@@ -511,18 +513,19 @@ footer {
 </section>
 
 
-<!-- SERVICIOS -->
+<!-- =========================
+     SERVICIOS
+========================= -->
 
 <section class="section" id="servicios">
 
     <div class="section-title">
 
-        <h2>
-            Servicios
-        </h2>
+        <h2>Servicios</h2>
 
         <p>
-            Soluciones digitales adaptadas a cada proyecto.
+            Servicios orientados al desarrollo y optimización de
+            actividades relacionadas con presencia y estrategias digitales.
         </p>
 
     </div>
@@ -530,17 +533,13 @@ footer {
 
     <div class="services">
 
-
         <div class="card">
 
-            <h3>
-                Estrategia Digital
-            </h3>
+            <h3>Asesoría Digital</h3>
 
             <p>
-                Planeación y organización de acciones digitales
-                orientadas a mejorar la presencia de un negocio
-                o proyecto en internet.
+                Orientación personalizada para estructurar y mejorar
+                diferentes aspectos de un proyecto dentro del entorno digital.
             </p>
 
         </div>
@@ -548,14 +547,11 @@ footer {
 
         <div class="card">
 
-            <h3>
-                Publicidad Digital
-            </h3>
+            <h3>Optimización de Redes</h3>
 
             <p>
-                Organización y gestión de campañas publicitarias
-                en plataformas digitales de acuerdo con los
-                objetivos definidos para cada proyecto.
+                Revisión y organización de perfiles, contenidos y elementos
+                de comunicación para fortalecer la presencia digital.
             </p>
 
         </div>
@@ -563,100 +559,396 @@ footer {
 
         <div class="card">
 
-            <h3>
-                Optimización Digital
-            </h3>
+            <h3>Estrategia Digital</h3>
 
             <p>
-                Revisión y mejora de estructuras digitales,
-                contenidos y procesos relacionados con la
-                presencia online.
+                Desarrollo de estrategias adaptadas a los objetivos,
+                características y necesidades particulares de cada proyecto.
             </p>
 
         </div>
-
 
     </div>
 
 </section>
 
 
-<!-- PROCESO -->
+<!-- =========================
+     INFORMACIÓN DEL NEGOCIO
+========================= -->
 
-<section class="section process">
+<section class="section" id="informacion">
 
-    <div class="process-container">
+    <div class="info-box">
+
+        <h2>
+            Información de contacto y ubicación
+        </h2>
+
+
+        <div class="info-row">
+
+            <strong>Nombre:</strong>
+
+            Valentina Moreno Oviedo
+
+        </div>
+
+
+        <div class="info-row">
+
+            <strong>Ciudad:</strong>
+
+            Piedecuesta, Santander, Colombia
+
+        </div>
+
+
+        <div class="info-row">
+
+            <strong>Dirección:</strong>
+
+            CL 6 3 42 BRR LA CANTERA
+
+        </div>
+
+
+        <div class="info-row">
+
+            <strong>Teléfono:</strong>
+
+            +57 318 762 1818
+
+        </div>
+
+
+        <div class="info-row">
+
+            <strong>Correo electrónico:</strong>
+
+            valentinamoreno.4321@gmail.com
+
+        </div>
+
+
+        <div class="info-row">
+
+            <strong>Actividad:</strong>
+
+            Servicios y actividades relacionadas con el entorno digital.
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CONTACTO
+========================= -->
+
+<section class="section contact" id="contacto">
+
+    <div class="contact-content">
+
+        <div class="section-title">
+
+            <h2>Contacto</h2>
+
+            <p>
+                Si deseas obtener información sobre los servicios,
+                puedes comunicarte directamente a través de los siguientes
+                medios.
+            </p>
+
+        </div>
+
+
+        <div class="contact-data">
+
+            <p>
+                📧 <strong>valentinamoreno.4321@gmail.com</strong>
+            </p>
+
+            <p>
+                📱 <strong>+57 318 762 1818</strong>
+            </p>
+
+            <p>
+                📍 <strong>Piedecuesta, Santander, Colombia</strong>
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     POLÍTICAS Y TÉRMINOS
+========================= -->
+
+<section class="section legal" id="politicas">
+
+    <div class="legal-container">
 
         <div class="section-title">
 
             <h2>
-                Forma de trabajo
+                Información legal y políticas
             </h2>
 
             <p>
-                Un proceso organizado para cada proyecto.
+                Información general sobre las condiciones de prestación
+                de servicios y tratamiento de información.
             </p>
 
         </div>
 
 
-        <div class="steps">
+        <!-- POLÍTICA DE PRIVACIDAD -->
+
+        <div class="legal-block" id="privacidad">
+
+            <h3>
+                Política de Privacidad
+            </h3>
+
+            <p>
+                Valentina Moreno Oviedo respeta la privacidad de las personas
+                que se comunican a través de este sitio web.
+            </p>
+
+            <p>
+                Los datos personales que una persona proporcione voluntariamente
+                mediante los canales de contacto podrán ser utilizados
+                únicamente para atender solicitudes, responder consultas,
+                prestar los servicios solicitados y mantener la comunicación
+                relacionada con dichas solicitudes.
+            </p>
+
+            <p>
+                La información personal no será comercializada ni cedida a
+                terceros con fines diferentes a los relacionados con la
+                prestación del servicio o el cumplimiento de obligaciones
+                legales.
+            </p>
+
+            <p>
+                El tratamiento de datos personales se realizará de acuerdo
+                con la normativa colombiana aplicable en materia de protección
+                de datos personales, incluyendo la Ley 1581 de 2012 y sus
+                normas reglamentarias.
+            </p>
+
+            <p>
+                Para solicitar información sobre el tratamiento de datos,
+                actualización, corrección o eliminación de información
+                personal, puede comunicarse mediante el correo:
+            </p>
+
+            <p>
+                <strong>
+                    valentinamoreno.4321@gmail.com
+                </strong>
+            </p>
+
+        </div>
 
 
-            <div class="step">
+        <!-- TÉRMINOS -->
 
-                <div class="step-number">
-                    01
-                </div>
+        <div class="legal-block" id="terminos">
 
-                <h3>
-                    Conocer el proyecto
-                </h3>
+            <h3>
+                Términos y Condiciones
+            </h3>
 
-                <p>
-                    Se revisan las necesidades, objetivos
-                    y características del negocio.
-                </p>
+            <p>
+                El acceso y uso de este sitio web implica la aceptación
+                de los presentes términos generales.
+            </p>
 
-            </div>
+            <p>
+                Los servicios ofrecidos corresponden a actividades de
+                asesoría, acompañamiento y desarrollo de estrategias
+                relacionadas con el entorno digital.
+            </p>
+
+            <p>
+                Cada servicio podrá ser definido previamente con el cliente,
+                incluyendo su alcance, características, tiempos de ejecución
+                y condiciones económicas.
+            </p>
+
+            <p>
+                La información proporcionada durante una asesoría deberá ser
+                utilizada por el cliente bajo su propia responsabilidad.
+                La prestación de servicios no constituye una garantía de
+                resultados económicos específicos.
+            </p>
+
+            <p>
+                El cliente será responsable de la información, materiales,
+                marcas, contenidos y productos que proporcione para el
+                desarrollo de cualquier actividad relacionada con el servicio.
+            </p>
+
+        </div>
 
 
-            <div class="step">
+        <!-- PAGOS -->
 
-                <div class="step-number">
-                    02
-                </div>
+        <div class="legal-block" id="pagos">
 
-                <h3>
-                    Definir la estrategia
-                </h3>
+            <h3>
+                Política de Pagos y Cancelaciones
+            </h3>
 
-                <p>
-                    Se establecen las acciones digitales
-                    que mejor se ajustan al proyecto.
-                </p>
+            <p>
+                Las condiciones económicas de cada servicio serán informadas
+                previamente al cliente antes de iniciar la prestación.
+            </p>
 
-            </div>
+            <p>
+                Cuando corresponda, los servicios podrán requerir un pago
+                anticipado para iniciar las actividades acordadas.
+            </p>
+
+            <p>
+                Los pagos correspondientes a servicios que ya hayan sido
+                prestados o iniciados no serán reembolsables en la parte
+                efectivamente ejecutada.
+            </p>
+
+            <p>
+                Cualquier solicitud de cancelación deberá comunicarse
+                oportunamente para determinar las condiciones aplicables
+                según el estado del servicio.
+            </p>
+
+            <p>
+                En caso de existir inversiones realizadas directamente
+                ante plataformas externas por solicitud del cliente,
+                dichas inversiones estarán sujetas a las políticas de
+                reembolso de la plataforma correspondiente.
+            </p>
+
+        </div>
 
 
-            <div class="step">
+        <!-- PRESTACIÓN -->
 
-                <div class="step-number">
-                    03
-                </div>
+        <div class="legal-block" id="prestacion">
 
-                <h3>
-                    Implementar y optimizar
-                </h3>
+            <h3>
+                Política de Prestación del Servicio
+            </h3>
 
-                <p>
-                    Se implementan las acciones acordadas
-                    y se realizan ajustes según el comportamiento
-                    de las campañas y procesos.
-                </p>
+            <p>
+                Una vez confirmado el servicio y recibida la información
+                necesaria, se coordinará con el cliente el inicio de las
+                actividades.
+            </p>
 
-            </div>
+            <p>
+                Los tiempos de ejecución dependerán del alcance de cada
+                servicio, la disponibilidad de información y la respuesta
+                del cliente durante el proceso.
+            </p>
 
+            <p>
+                Cuando sea necesario acceder a plataformas digitales,
+                el cliente deberá proporcionar los permisos correspondientes
+                mediante los mecanismos disponibles en cada plataforma.
+            </p>
+
+            <p>
+                Las actividades realizadas estarán limitadas al alcance
+                previamente acordado con el cliente.
+            </p>
+
+        </div>
+
+
+        <!-- RESULTADOS -->
+
+        <div class="legal-block" id="resultados">
+
+            <h3>
+                Resultados y responsabilidad
+            </h3>
+
+            <p>
+                Las estrategias digitales pueden contribuir al desarrollo
+                y optimización de una actividad comercial, pero no existe
+                garantía de resultados económicos específicos.
+            </p>
+
+            <p>
+                El rendimiento de una estrategia puede depender de factores
+                externos como presupuesto, mercado, producto o servicio,
+                competencia, audiencia, contenido, comportamiento de los
+                usuarios y cambios realizados por las plataformas digitales.
+            </p>
+
+            <p>
+                Los resultados obtenidos anteriormente, propios o de terceros,
+                no constituyen una garantía de resultados futuros.
+            </p>
+
+        </div>
+
+
+        <!-- AVISO LEGAL -->
+
+        <div class="legal-block" id="aviso">
+
+            <h3>
+                Aviso Legal y afiliaciones
+            </h3>
+
+            <p>
+                Este sitio web y los servicios ofrecidos son independientes
+                y no representan oficialmente a Meta Platforms, Inc.,
+                Facebook, Instagram, Google, TikTok ni ninguna otra
+                plataforma tecnológica.
+            </p>
+
+            <p>
+                No existe afiliación, asociación, patrocinio o respaldo
+                oficial por parte de dichas plataformas, salvo que se
+                indique expresamente lo contrario.
+            </p>
+
+            <p>
+                Las marcas y nombres comerciales pertenecientes a terceros
+                son propiedad de sus respectivos titulares.
+            </p>
+
+        </div>
+
+
+        <!-- ACTUALIZACIÓN -->
+
+        <div class="legal-block">
+
+            <h3>
+                Actualización de la información
+            </h3>
+
+            <p>
+                La información de este sitio web y sus políticas podrá ser
+                actualizada cuando sea necesario para reflejar cambios en
+                los servicios, condiciones de prestación o requisitos
+                legales aplicables.
+            </p>
+
+            <p>
+                Última actualización: agosto de 2026.
+            </p>
 
         </div>
 
@@ -665,162 +957,66 @@ footer {
 </section>
 
 
-<!-- INFORMACIÓN LEGAL / NEGOCIO -->
-
-<section class="section business-info" id="informacion">
-
-    <div class="business-box">
-
-        <h2>
-            Información del negocio
-        </h2>
-
-        <p>
-            Información de identificación y contacto
-            correspondiente a la persona responsable del servicio.
-        </p>
-
-
-        <div class="business-data">
-
-
-            <div class="data-item">
-
-                <strong>
-                    Nombre
-                </strong>
-
-                Valentina Moreno Oviedo
-
-            </div>
-
-
-            <div class="data-item">
-
-                <strong>
-                    Identificación tributaria
-                </strong>
-
-                NIT 1.102.351.527-6
-
-            </div>
-
-
-            <div class="data-item">
-
-                <strong>
-                    Dirección
-                </strong>
-
-                CL 6 3 42 BRR LA CANTERA<br>
-                Piedecuesta, Santander<br>
-                Colombia
-
-            </div>
-
-
-            <div class="data-item">
-
-                <strong>
-                    Tipo de contribuyente
-                </strong>
-
-                Persona natural
-
-            </div>
-
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- CONTACTO -->
-
-<section class="section contact" id="contacto">
-
-    <div class="section-title">
-
-        <h2>
-            Contacto
-        </h2>
-
-        <p>
-            Si deseas conocer más sobre los servicios,
-            puedes comunicarte directamente.
-        </p>
-
-    </div>
-
-
-    <p>
-        📧
-        <a href="mailto:valentinamoreno.4321@gmail.com">
-            valentinamoreno.4321@gmail.com
-        </a>
-    </p>
-
-
-    <p>
-        📱
-        <a href="tel:+573188762181">
-            +57 318 876 2181
-        </a>
-    </p>
-
-
-    <p>
-        📍 Piedecuesta, Santander, Colombia
-    </p>
-
-
-</section>
-
-
-<!-- FOOTER -->
+<!-- =========================
+     FOOTER
+========================= -->
 
 <footer>
 
-    <div class="footer-links">
+    <div class="footer-content">
 
-        <a href="#inicio">
-            Inicio
-        </a>
-
-        <a href="#sobre-mi">
-            Sobre mí
-        </a>
-
-        <a href="#servicios">
-            Servicios
-        </a>
-
-        <a href="#informacion">
-            Información
-        </a>
-
-        <a href="#contacto">
-            Contacto
-        </a>
-
-    </div>
+        <div class="footer-name">
+            Valentina Moreno Oviedo
+        </div>
 
 
-    <div>
-        © 2026 Valentina Moreno Oviedo.
-        Todos los derechos reservados.
-    </div>
+        <div class="footer-links">
+
+            <a href="#inicio">
+                Inicio
+            </a>
+
+            <a href="#privacidad">
+                Privacidad
+            </a>
+
+            <a href="#terminos">
+                Términos
+            </a>
+
+            <a href="#pagos">
+                Pagos
+            </a>
+
+            <a href="#prestacion">
+                Prestación del servicio
+            </a>
+
+            <a href="#aviso">
+                Aviso legal
+            </a>
+
+            <a href="#contacto">
+                Contacto
+            </a>
+
+        </div>
 
 
-    <div style="margin-top: 8px;">
-        Piedecuesta, Santander, Colombia
+        <div class="footer-small">
+
+            © 2026 Valentina Moreno Oviedo.
+            Todos los derechos reservados.
+
+            <br><br>
+
+            Piedecuesta, Santander, Colombia.
+
+        </div>
+
     </div>
 
 </footer>
 
-
 </body>
-
 </html>
